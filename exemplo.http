@@ -1,0 +1,39 @@
+###
+http://localhost:3000/dentistas
+
+###
+http://localhost:3000/dentistas/2
+
+###
+
+POST http://localhost:3000/dentistas HTTP/1.1
+content-type: application/json
+
+{
+    "nome": "Beatriz",
+    "cpfCnpj": "000000000-40",
+    "endereco": "Rua Visconde de Pirajá 550",
+    "telFixo": "(21)2570-2094",
+    "telCel": "(21) 99752-6570",
+    "Email": "rene@gmail.com",
+    "credito": "200,00"
+}
+###
+PUT http://localhost:3000/dentistas/2 HTTP/1.1
+content-type: application/json
+
+{
+    "nome": "Massay",
+    "cpfCnpj": "000000000-40",
+    "endereco": "Rua Visconde de Pirajá 550",
+    "telFixo": "(21)2570-2094",
+    "telCel": "(21) 99752-6570",
+    "Email": "rene@gmail.com",
+    "credito": "200,00"
+
+}
+
+###
+
+DELETE  http://localhost:3000/dentistas/2 HTTP/1.1
+content-type: application/json

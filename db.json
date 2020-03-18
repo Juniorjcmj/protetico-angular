@@ -1,0 +1,54 @@
+{
+  "dentistas": [
+    {
+      "id": 1,
+      "nome": "json-server",
+      "cpfCnpj": "typicode",
+      "endereco": "Rua Visconde de Pirajá 550",
+      "telFixo": "(21)2570-2094",
+      "telCel": "(21) 99752-6570",
+      "Email": "rene@gmail.com",
+      "credito": "200,00"
+    },
+    {
+      "nome": "Massay",
+      "cpfCnpj": "000000000-40",
+      "endereco": "Rua Visconde de Pirajá 550",
+      "telFixo": "(21)2570-2094",
+      "telCel": "(21) 99752-6570",
+      "Email": "rene@gmail.com",
+      "credito": "200,00",
+      "id": 3
+    },
+    {
+      "nome": "Renata",
+      "cpfCnpj": "000000000-40",
+      "endereco": "Rua Visconde de Pirajá 550",
+      "telFixo": "(21)2570-2094",
+      "telCel": "(21) 99752-6570",
+      "Email": "rene@gmail.com",
+      "credito": "200,00",
+      "id": 4
+    },
+    {
+      "nome": "Juliana",
+      "cpfCnpj": "000000000-40",
+      "endereco": "Rua Visconde de Pirajá 550",
+      "telFixo": "(21)2570-2094",
+      "telCel": "(21) 99752-6570",
+      "Email": "rene@gmail.com",
+      "credito": "200,00",
+      "id": 5
+    },
+    {
+      "nome": "Beatriz",
+      "cpfCnpj": "000000000-40",
+      "endereco": "Rua Visconde de Pirajá 550",
+      "telFixo": "(21)2570-2094",
+      "telCel": "(21) 99752-6570",
+      "Email": "rene@gmail.com",
+      "credito": "200,00",
+      "id": 6
+    }
+  ]
+}

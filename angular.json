@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "protetico-angular": {
@@ -145,6 +145,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "protetico-angular"
+    }
+  },
+  "defaultProject": "protetico-angular",
+  "cli": {
+    "analytics": "58fbb7a2-214e-40bd-8058-c8ae87b7fc3d"
+  }
 }

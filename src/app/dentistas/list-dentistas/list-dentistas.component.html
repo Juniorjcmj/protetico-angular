@@ -1,0 +1,61 @@
+<div class="card mt-3">
+  <div class="card-header">
+    <div class="float-left">
+      <h4>Clientes</h4>
+    </div>
+    <div class="float-right">
+      <button type="button" class="btn btn-primary" [routerLink]="['novo']">Novo Cliente</button>
+      <button type="button" class="btn btn-secondary" (click)="onRefresh()" >Atualizar</button>
+    </div>
+  </div>
+  <div class="table-responsive-md">
+    <table class="table table-hover" *ngIf="dentistas$ | async as dentistas; else loading">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nome</th>
+          <th>CPF/CNPJ</th>
+          <th>Endereço</th>
+          <th>Tel Fixo</th>
+          <th>Tel Cel</th>
+          <th>Email</th>
+          <th>Crédito</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let dentista of dentistas" >
+          <td>{{dentista.id}}</td>
+          <td>{{dentista.nome}}</td>
+          <td>{{dentista.cpfCnpj}}</td>
+          <td>{{dentista.endereco}}</td>
+          <td>{{dentista.telFixo}}</td>
+          <td>{{dentista.telCel}}</td>
+          <td>{{dentista.email}}</td>
+          <td>{{dentista.credito}}</td>
+          <td>
+            <span class="float-right">
+              <button class="btn btn-outline-warning mb-1 btn-sm" >
+                Atualizar
+              </button>
+
+              <button class="btn btn-outline-danger mb-1 btn-sm"  >
+                Remover
+              </button>
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+  <ng-template #loadingNoError>
+      <div *ngIf="error$ | async; else loading">
+        Error ao carregar cursos. Tente novamente mais tarde.
+      </div>
+      <ng-template #loading>
+        <span>Carregando Cursos...</span>
+      </ng-template>
+
+     </ng-template>
+    </div>
+</div>
